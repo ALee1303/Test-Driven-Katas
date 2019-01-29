@@ -4,7 +4,7 @@ const wrap = function (inString, colWidth){
   if ( outString.length <= colWidth) {
     return outString;
   }
-  const cutIdx = inString.lastIndexOf(' ', colWidth)
+  const cutIdx = outString.lastIndexOf(' ', colWidth)
   const newSliced = outString.slice(0, cutIdx).trim();
   const remainingSlice = outString.slice(cutIdx);
   
